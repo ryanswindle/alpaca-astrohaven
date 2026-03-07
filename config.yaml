@@ -1,0 +1,16 @@
+entity: astrohaven
+server:
+  host: 0.0.0.0
+  port: 5300
+log_level: INFO
+devices:
+  - entity: AstroHaven16X2T2D_1
+    device_number: 0
+    # Modbus TCP connection to the AstroHaven PLC
+    modbus_host: 192.168.0.101
+    modbus_port: 502
+    open_close_time: 20 # Timed duration for an open/close [sec]
+    fifth_closed_angle: 45 # Fifth shutter angle for determining DomeState.CLOSED
+    fifth_open_angle: 835 # Fifth shutter angle for determining DomeState.OPEN
+    brake_monitor_interval: 30 # Periodically wake the motors [sec]
+    timeout: 30 # ERROR if still opening/closing after this time [sec]
