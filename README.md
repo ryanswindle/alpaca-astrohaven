@@ -96,6 +96,7 @@ python test.py
 ```bash
 docker build -t alpaca-astrohaven .
 docker run -d --name alpaca-astrohaven \
+    -v ./config.yaml:/alpyca/config.yaml:ro \
     --network host \
     --restart unless-stopped \
     alpaca-astrohaven

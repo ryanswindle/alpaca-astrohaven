@@ -200,6 +200,10 @@ class DomeDevice:
         self._connected = False
         logger.info(f"Disconnected from dome: {self._config.entity}")
 
+    @property
+    def entity(self) -> str:
+        return self._config.entity
+
 
     ####################
     # IDome properties #
