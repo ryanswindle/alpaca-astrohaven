@@ -128,7 +128,7 @@ Last tested with **ConformU 4.3.0 (Build 49708.0503dc7)** on 2026-05-16
 
 | Device | Errors | Issues | Info | Status |
 |--------|:------:|:------:|:----:|:------:|
-| AstroHaven16X2T2D_1 (Dome #0) | 1 | 0 | 36 | ✓ PASS |
+| AstroHaven16X2T2D_1 (Dome #0) | 0 | 0 | 44 | ✓ PASS |
 
 _Errors may be non-zero when no hardware is attached (NotConnectedException is the expected response). **Issues == 0** indicates Alpaca protocol conformance._
 <!-- conformu:end -->
